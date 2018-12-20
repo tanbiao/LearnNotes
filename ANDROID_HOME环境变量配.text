@@ -1,0 +1,27 @@
+android-studio - android_home  - export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools ()
+
+//删除 java JDK 
+
+sudo rm -rf /Library/Java/JavaVirtualMachines/jdk-9.jdk
+sudo rm -fr /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin 
+sudo rm -fr /Library/PreferencePanes/JavaControlPanel.prefPane 
+sudo rm -fr ~/Library/Application\ Support/Java
+
+
+JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home"
+
+export JAVA_HOME
+
+CLASS_PATH="$JAVA_HOME/lib"
+
+PATH=".$PATH:$JAVA_HOME/bin"
+
+//JDK 配置 
+vi /etc/profile
+
+JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home"
+export JAVA_HOME
+CLASS_PATH="$JAVA_HOME/lib"
+PATH=".$PATH:$JAVA_HOME/bin"
+
+//java 的安装路径  在资源库  在文件前往   / 回车

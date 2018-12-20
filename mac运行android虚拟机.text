@@ -1,0 +1,20 @@
+
+// 查看 安卓 设备 列表 
+
+adb devices 
+
+//JDK 配置
+https://jingyan.baidu.com/article/908080221f3cfefd91c80fbf.html
+
+//Android 模拟器配置
+https://www.jianshu.com/p/fcca40a4769d
+
+
+//解决版本过低运行不了的问题
+https://www.jianshu.com/p/7f2d1ab429c2?from=timeline&isappinstalled=0
+
+//babel-preset-react-native版本不匹配
+https://blog.csdn.net/andanlan/article/details/78113528
+
+//运行低版本项目 报错解决
+https://blog.csdn.net/shubinniu/article/details/52873250

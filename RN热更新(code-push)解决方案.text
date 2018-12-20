@@ -1,0 +1,39 @@
+
+// 利用微软code-push服务器 ,实现热更新全过程 并且发布更新
+https://www.jianshu.com/p/28589c0be542?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
+
+// 搭建自己的code-push服务器 并发布更新
+https://www.jianshu.com/p/eb7fdee307dc
+
+// 发布更新 ,以及相关命令详解
+https://www.jianshu.com/p/88b54e003027
+
+//最新集成总结
+https://github.com/crazycodeboy/RNStudyNotes/tree/master/React%20Native应用部署、热更新-CodePush最新集成总结
+	
+//修改服务器管理员密码
+ //https://blog.csdn.net/wnma3mz/article/details/77618475
+
+//code-push 进阶篇,对各种场景的应用, 以及命令各个参数的详解
+https://www.jianshu.com/p/6e96c6038d80?from=timeline 
+
+// 把测试环境 发布到正式环境
+使用场景：当你在指定的部署环境下测试更新时，例如Staging，测试通过后，想把这个更新发布到正式生产环境Production中，则可以使用code-push promote MyAppAndroid Staging Production，这时可以修改一些元数据，例如--description、--targetBinaryVersion、--rollout等。
+
+链接：https://www.jianshu.com/p/6e96c6038d80
+
+//登录自己的服务器
+code-push login http://172.18.158.125:3000
+
+
+// 热更新需要 注意的地方,
+1. 打包的时候 , bundle包的名字 一定要和xcode 里面的 jsbundle 包要一致并且包括格式
+2. 检查各种环境 ,CodePushDeploymentKey 服务器地址 CodePushServerURL ,证书等等.
+3. 更新了之后并没有什么改变, 可能是已经回滚了 用code-push deployment ls appName 来看是否有回滚
+4. 默认情况下只能在正式版 才能使用热更新
+
+
+// 修改服务器密码
+替换 token
+$ curl -X PATCH -H "Authorization: Bearer mytoken" -H "Accept: application/json" -H "Content-Type:application/json" -d '{"oldPassword":"123456","newPassword":"654321"}' http://127.0.0.1:3000/users/password
+注意:  http://127.0.0.1:3000/users/password 这个修改自己的IP地址

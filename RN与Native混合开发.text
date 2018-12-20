@@ -1,0 +1,12 @@
+
+1. rn 如何 跳转原生页面.
+2. 原生 如何 加载多个独立的 rn界面(单个已经实现了)
+
+//react 跳转 原生
+https://blog.csdn.net/sinat_17775997/article/details/71159493
+
+//redux-saga 异步处理
+
+
+//原生 与 RN 的通讯
+https://blog.csdn.net/qq_32014215/article/details/56844927

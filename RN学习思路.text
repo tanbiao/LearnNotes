@@ -1,0 +1,83 @@
+React 脚手架- create-react-app 
+es6学习网址 http://es6.ruanyifeng.com/
+react相关  https://reactjs.org/docs/hello-world.html
+
+
+周三（七点钟开始）培训内容 
+1. 开发流程 调试 怎么找错误
+2. es6语法 react
+3. flex布局
+4. rn常用控件
+
+周六 培训 （10点钟开始）
+1. 简述现有信e家rn版本的结构
+2. 开发一个功能完整登陆页面，多个rn页面之间如何传值和回调
+
+
+开发流程 调试 怎么找错误
+安装需要了解
+node 
+包资源管理器 npm yarn (增加，删除，查询模块)react
+package.json (—save —save-dev global 范围区别)
+私有npm搭建 https://github.com/rlidwka/sinopia sinopia
+
+react-native-cli 脚手架
+常用命令
+react-native init 工程名
+react-native start  启动node服务器 （生成可以访问的bundle.js）
+react-native run-ios 
+react-native run-android
+react-native  bundle
+react-native upgrade
+
+打包命令：
+react-native bundle --entry-file demo/index.js --bundle-output  ./ios/bundle/index.ios.jsbundle --platform ios --assets-dest ./ios/bundle --dev false
+发包流程 打bundle包和图片assert - 放在项目 -打出对应的apk和ipa
+热修复（codePush ）
+
+android 模拟器
+Genymotion
+
+调试
+如何开启调试
+开发者菜单 react-devtools 
+start remote js debugging  - google浏览器 - 开发者模式 - source - 打断点
+
+怎么找错误
+红屏
+解决思路： 先看下node服务生成bundle文件是否有问题 - 在看红屏的上的问题
+解决技巧：建议以版本控制现有代码工程，实在解决不了，回滚再弄看到哪里有问题
+如果是库的问题 
+建议在github的issue去搜索
+
+ceate-react-app 
+
+es6 重点 
+类（class）继承 静态方法 静态属性
+箭头函数（this语法）
+解构，三点运算符 let const
+模块（import export）
+promise 
+
+react重点
+jsx
+prop state 
+ref proptypes
+组件生命周期
+Redux +router架构
+
+flex布局  (http://blog.csdn.net/codetomylaw/article/details/52190636)
+概念： 主轴，交叉轴 父容器（justify-content align-item） 子容器(flex align-self)
+flexDirection
+|row           |横向布局，主轴为水平方向|
+|column     |纵向布局，主轴为竖直方向|
+
+rn常用布局组件
+容器： View
+列表 flatlist listview sectionlist VirtualizedList
+事件相关：TouchableOpacity TouchableHighlight TouchableNativeFeedback
+其他 Image Text Webview
+
+https://lellansin.wordpress.com/2014/02/27/npm-安装出现-unmet-dependency-的解决方案/
+
+// rn 在添加其他的依赖之后出现报错,删除app  ,重启

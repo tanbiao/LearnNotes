@@ -1,0 +1,8 @@
+
+1. prop-types
+
+npm install --save prop-types
+
+
+2.RN热更新技术文档
+https://github.com/reactnativecn/react-native-pushy/blob/master/docs/guide.md

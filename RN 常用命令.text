@@ -1,0 +1,30 @@
+
+
+// 删除 node_modules
+rm -rf node_modules
+npm cache clean
+nom install
+
+//npm 升级
+sudo npm update -g
+
+//查看node.js 版本 
+node -v
+
+//查看 RN  版本
+react-native -v
+
+//查看npm 依赖版本
+npm info react-native
+
+//查看 babel-jest  babel-preset-react-native
+npm info babel-jest
+npm info babel-preset-react-native
+
+// npm 到制定版本
+npm install --save-dev react-router@2.8.1
+
+//安装第三方库
+yarn  add  库名
+
+//安卓自动配置测试环境 cd android && ./gradlew installDebug
